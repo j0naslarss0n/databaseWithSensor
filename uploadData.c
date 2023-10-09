@@ -1,10 +1,10 @@
  
 /************************************************
- * Uppgift i Systemintegration IoT				*
- * vid Nackademin 2023							*
- * Ett litet program i C som skickar upp		*
- * data mot en mySQL/mariaDB datatbas			*
- *												*
+ * Uppgift i Systemintegration IoT				
+ * vid Nackademin 2023							
+ * Ett litet program i C som skickar upp		
+ * data mot en mySQL/mariaDB datatbas			
+ *												
  ************************************************/
 #include <mysql.h>
 #include <stdio.h>
