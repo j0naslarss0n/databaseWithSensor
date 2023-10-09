@@ -16,12 +16,12 @@
 #include <string.h>
 #include <time.h>
 
-// En funktion som tömmer buffern
+// tömmer buffern
 void flush(){
         while(getchar() !='\n');
         }
 
-// En funktion som avslutar och ger feedback om error.
+// Avslutar och ger feedback om error.
 void finish_with_error(MYSQL *conn){
 	fprintf(stderr, "%s\n", mysql_error(conn)); // TODO en logg där det skrivs
 	mysql_close(conn);
