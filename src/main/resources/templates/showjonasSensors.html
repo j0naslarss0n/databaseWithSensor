@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jonas Temperatur Sensor</title>
+</head>
+<body>
+<h2 th:text="${categoryTitle}"></h2>
+<div class="allSensors" th:unless="${#lists.isEmpty(allSensors)}">
+
+  <table >
+    <th WIDTH="50" height="50" th:text="${id}"></th>
+    <th th:text="${temperatur}">c</th>
+
+    <th th:text="${tid}"></th>
+
+    <tbody>
+    <tr th:each="cat : ${allSensors}">
+      <td th:text="${cat.id}"></td>
+      <td  th:text="${cat.temperatur}"></td>
+      <td th:text="${cat.tid}"></td>
+
+
+
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+</html>
